@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaVie Travel - Ajuda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Uchen&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/icone.png">
+    <link rel="stylesheet" href="css/estilos-ajuda.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="imagens/logo.png" class="logo" alt="logo da LaVie travel">
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pacote-destaque.html"><span class="texto-opcional">Pacote em&nbsp;</span>Destaque</a></li>
+                <li><a href="/quem-somos.html">Quem Somos</a></li>
+                <li><a href="/ajuda.html" class="pagina-atual">Ajuda</a></li>
+            </ul>
+        </nav>
+        <div class="imagem-destaque">
+            <img src="imagens/destaque-mobile.png" class="imagem-mobile" alt="logo da LaVie travel">
+        </div>
+    </header>
+    
+    <!-- Destaque da página -->
+    <main>
+        <!-- Perguntas Frequentes - FAQ -->
+        <section class="faq">
+            <h1 class="titulo">Como podemos te ajudar?</h1>
+            <div class="subtitulo subtitulo-fundo">
+                <h3 >Perguntas frequentes:</h3>
+            </div>
+            <details>
+                <summary>Como realizar a compra?</summary>
+                <p>Para comprar um de nossos pacotes basta clicar no botão "Comprar" e você será direcionado ao nosso atendimento personalizado via WhatsApp. Assim, um de nossos consultores irá te auxiliar no processo de compra para que você tenha uma excelente experiência. Caso o botão apresente algum erro, você pode nos acionar através do telefone de contato (34) 99660-8888.</p>
+            </details>
+            <details>
+                <summary>É seguro?</summary>
+                <p>Sim. Somos uma empresa com mais de 10 anos de experiência no mercado de agências de viagens e você pode ler um pouquinho da nossa história através da aba <span><a href="/quem-somos.html" target="_blank">Quem Somos</a></span>. Nossa experiência de mercado, associada ao cumprimento de todos os direitos que regem o código de defesa do consumidor, fazem com que sua compra seja perfeitamente segura.</p>
+            </details>
+            <details>
+                <summary>O que está incluso no meu pacote?</summary>
+                <p>Os nossos pacotes incluem o transporte aéreo saindo de São Paulo até o local de destino. Além disso, incluem a hospedagem em quartos duplos ou triplos sempre em hotéis 3 estrelas ou mais, escolhidos a dedo para que sua viagem seja inesquecível.</p>
+            </details>
+            <details>
+                <summary>Posso cancelar o pacote?</summary>
+                <p>Até 7 dias após a compra o cancelamento é gratuito e caso ocorra algum imprevisto o valor pode ser restituído em vale compras para uma viagem futura ou estorno no cartão de crédito. Após 7 dias da data da compra e até 45 dias antes da data da viagem será cobrada uma taxa no valor de 20% do valor do pacote. Caso o cancelamento seja solicitado com menos de 45 dias da data da viagem, a taxa terá o valor de 50% do valor do pacote. Mas, se a solicitação for feita no dia da viagem a multa é de 100% do valor do pacote e, portanto, não haverá restituição do valor pago.</p>
+            </details>
+            <details>
+                <summary>Como solicitar o cancelamento?</summary>
+                <p>Para cancelar sua viagem basta entrar em contato conosco através do nosso telefone de contato (34) 99660-8888, que também é nosso WhatsApp.</p>
+            </details>
+            <details>
+                <summary>Há taxas extras em meu pacote?</summary>
+                <p>Não. O valor do pacote já inclui todas as taxas, com exceção de impostos locais, taxas de serviços e despacho de bagagem.</p>
+            </details>
+            <details>
+                <summary>Já comprei meu pacote, como marcar minha viagem?</summary>
+                <p>O atendimento da LaVie Travel é inteiramente personalizado e o agendamento da viagem é feito junto a um de nossos consultores, que irão te acompanhar durante todo o processo para auxiliar e esclarecer todas as dúvidas. Vale destacar que pós a realização da compra o contrato com todas as orientações sobre o pacote adquirido contendo orientações para sua viagem.</p>
+            </details>
+        </section>
+
+        <!-- Contatos -->
+        <section class="formulario">
+            <div class="subtitulo subtitulo-fundo">
+                <h3>Ficou com alguma dúvida? <br> Entre em contato conosco!</h3>
+            </div>
+            <form>
+                <fieldset style="display: flex;">
+                    <legend>Formulário de Contato</legend>
+                    <div class="campos">
+                        <div class="dados">
+                            <label class="item-form" for="nome">Nome:*</label>
+                            <input class="input-form" id="nome" type="text" maxlength="40" required>
+                        </div>
+                        <div class="dados">
+                            <label class="item-form" for="email">E-mail:*</label>
+                            <input class="input-form" id="email" type="email" required>
+                        </div>
+                        <div class="dados">
+                            <label class="item-form" for="tel">Telefone:*</label>
+                            <input class="input-form" id="tel" type="tel" maxlength="11" required>
+                        </div>
+                        <div class="dados">
+                            <label class="item-form" for="msg">Mensagem:*</label>
+                            <textarea class="input-form"  style="margin: 10px 0px 0px 10px" name="mensagem" id="msg" cols="30" rows="10" required></textarea>
+                        </div>
+                        <p>* Campos obrigatórios</p>
+                    </div>
+                    <div>
+                        <img src="imagens/destaque-mobile.png" alt="logo da LaVie travel">
+                    </div>
+                </fieldset>
+                <div class="botoes">
+                    <input type="reset" class="botao" value="Limpar">
+                    <input type="submit" class="botao" value="Enviar">
+                </div>
+            </form>
+        </section>
+
+        <!-- Seção com os logos e links para as redes sociais -->
+        <section>
+            <div class="subtitulo subtitulo-fundo">
+                <h3>Conheça nossas redes sociais:</h3>
+            </div>
+            <div class="sociais">
+                <div class="card">
+                    <a href="https://www.facebook.com/" target="_blank"><img src="imagens/facebook.png" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="https://www.instagram.com/" target="_blank"><img src="imagens/instagram.png" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="https://twitter.com/login?lang=pt" target="_blank"><img src="imagens/twitter.png" alt=""></a>
+                </div>
+                <div class="card">
+                    <a href="https://www.youtube.com/" target="_blank"><img src="imagens/youtube.png" alt=""></a>
+                </div>
+            </div>
+        </section>
+        <hr>
+    </main>
+
+    <footer>
+        <p class="rodape">Made with ❤️ by <a href="https://www.linkedin.com/in/patr%C3%ADcia-sotero-71a803170/" target="_blank">Patrícia Rocha</a><p>
+    </footer>
+</body>
+</html>

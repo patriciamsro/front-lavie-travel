@@ -1,0 +1,302 @@
+* {
+    margin: 0px;
+    font-family: 'Uchen', serif;
+    /* border: 1px solid black; */
+}
+/*HEADER*/
+/*Menu de navegação*/
+.logo {
+    display: none;
+}
+nav {
+    background-color: #eeebe8;
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 17px;
+    padding: 0px;
+    white-space: nowrap;
+}
+nav ul li {
+    list-style: none;
+    margin-right: 12px;
+
+}
+nav a:link, nav a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #524c4b;
+    transition: all 0.3s;
+    padding: 5px;
+}
+ul li a {
+    background-position: center;
+    background-size: 0%;
+    background-repeat: no-repeat;
+}
+ul li a:hover {
+    color: transparent;
+}
+ul li:nth-child(1) a:hover {
+    background-image: url("../imagens/home.png");
+    background-size: 80%;
+}
+ul li:nth-child(2) a:hover {
+    background-image: url("../imagens/pacote-destaque.png");
+    background-size: 25%;
+}
+ul li:nth-child(3) a:hover {
+    background-image: url("../imagens/quem-somos.png");
+    background-size: 45%;
+}
+ul li:nth-child(4) a:hover {
+    background-image: url("../imagens/ajuda.png");
+    background-size: 80%;
+}
+.pagina-atual {
+    color:  rgb(255, 151, 171) !important;
+}
+.pagina-atual:hover {
+    color: transparent !important;
+}
+
+/*HEADER*/
+header {
+    margin: auto;
+}
+.texto-opcional {
+    display: none;
+}
+
+/*Imagem capa*/
+.imagem-destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem-mobile {
+    width: 45%;
+    padding: 0px;
+    margin-top: 30px;
+}
+/*MAIN*/
+main {
+    margin: auto;
+    padding: 15px;
+}
+/*Título*/
+.titulo {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(70, 136, 113);
+    display: block;
+}
+
+/*Subtítulo*/
+.subtitulo {
+    text-align: center;
+    font-weight: bold;
+    color: #524c4b;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 10px;
+}
+.subtitulo-fundo h3 {
+    background-color: rgb(254, 208, 219, 0.3);
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+/*Perguntas Frequentes - FAQ*/
+details {
+    padding: 10px;
+    background-color: #f8f5f2;
+    border-bottom: solid lightgray 1px;
+    color: grey;
+}
+details:hover {
+    cursor: pointer;
+}
+details summary {
+    font-weight: bold;
+}
+details p {
+    padding: 20px;
+    text-align: justify;
+}
+details span a {
+    text-decoration: none;
+    color: rgb(255, 151, 171);
+}
+
+/*Contatos*/
+.formulario form {
+    width: 100%;
+    color: grey;
+}
+fieldset div img {
+    display: none;
+}
+.item-form {
+    width: 70px;
+    display: inline-block;
+    padding: 5px;
+}
+.input-form {
+    width: 90%;
+    margin: 10px;
+}
+
+.botoes {
+    text-align: right;
+}
+.botoes .botao {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #524c4b;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+.botao a:link, .botao a:visited {
+    text-decoration: none;
+}
+.botao:hover {
+    color: rgb(255, 151, 171);
+    cursor: pointer;
+}
+
+
+/* Seção com os logos e links para as redes sociais */
+.sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+.sociais img {
+    width: 40px;
+}
+.card img {
+    border-radius: 4px;
+    width: 50px;
+    display: inline-block;
+    margin: auto;
+}
+
+
+/*FOOTER*/
+/*Rodapé da página*/
+footer {
+    color: #524c4b;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+    font-size: 14px;
+}
+footer a{
+    text-decoration: none;
+    color: #312e2e;
+    font-weight: bold;
+}
+.rodape {
+    background-color: #eeebe8;
+    padding: 5px;
+}
+
+/*Configurações para versão web*/
+@media screen and (min-width: 1000px) {
+        
+    /*HEADER*/
+    header {
+        width: 100%;
+        margin: auto;
+    }
+    .texto-opcional {
+        display: inline-block;
+    }
+
+    /*Menu de navegação*/
+    .logo {
+        width: 120px;
+        display: block;
+        border-radius: 50%;
+        position: fixed;
+        top: -2.5%;
+        left: 2%;
+    }
+    nav {
+        position: fixed;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        padding-left: 170px;
+        height: 63px;
+        justify-content: left;
+    }
+    nav ul li {
+        font-size: 17px;
+        margin: 15px;
+    }
+
+    /*Imagem capa*/
+    .imagem-destaque {
+        display: none;
+    }
+    /*MAIN*/
+    main {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .titulo {
+        font-size: 30px;
+        padding-top: 80px;
+        padding-bottom: 20px;
+    }
+    .subtitulo-fundo h3 {
+        font-size: 18px;
+    }
+    .subtitulo-fundo h3 br {
+        display: none;
+    }
+    
+    .campos {
+        width: 50%;
+    }
+    fieldset div img {
+        display: inline-block;
+        width: 90%;
+    }
+    .input-form {
+        width: 70%;
+    }
+    .botoes {
+        border: 2px solid grey;
+        padding-right: 25px;
+    }
+    .botoes .botao {
+        width: 23%;
+        margin-bottom: 10px;
+    }
+        /*FOOTER*/
+    /*Rodapé da página*/
+    footer {
+        width: 100%;
+        font-size: 15px;
+    }
+    .rodape {
+        background-color: #eeebe8;
+        margin: 0;
+        padding: 10px;
+    }
+}

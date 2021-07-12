@@ -1,0 +1,374 @@
+* {
+    margin: 0px;
+    font-family: 'Uchen', serif;
+    /* border: 1px solid black; */
+}
+/*HEADER*/
+/*Menu de navegação*/
+.logo {
+    display: none;
+}
+nav {
+    background-color: #eeebe8;
+    position: fixed;
+    width: 100%;
+}
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    font-size: 17px;
+    padding: 0px;
+    white-space: nowrap;
+}
+nav ul li {
+    list-style: none;
+    margin-right: 12px;
+}
+nav a:link, nav a:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #524c4b;
+    transition: all 0.3s;
+    padding: 5px;
+}
+ul li a {
+    background-position: center;
+    background-size: 0%;
+    background-repeat: no-repeat;
+}
+ul li a:hover {
+    color: transparent;
+}
+ul li:nth-child(1) a:hover {
+    background-image: url("../imagens/home.png");
+    background-size: 80%;
+}
+ul li:nth-child(2) a:hover {
+    background-image: url("../imagens/pacote-destaque.png");
+    background-size: 25%;
+}
+ul li:nth-child(3) a:hover {
+    background-image: url("../imagens/quem-somos.png");
+    background-size: 45%;
+}
+ul li:nth-child(4) a:hover {
+    background-image: url("../imagens/ajuda.png");
+    background-size: 80%;
+}
+.pagina-atual {
+    color:  rgb(255, 151, 171) !important;
+}
+.pagina-atual:hover {
+    color: transparent !important;
+}
+
+header {
+    margin: auto;
+}
+.texto-opcional {
+    display: none;
+}
+
+/*Imagem capa*/
+.imagem-destaque {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.imagem-mobile {
+    width: 45%;
+    padding: 0px;
+    margin-top: 30px;
+}
+.imagem-web {
+    display: none;
+}
+
+/*MAIN*/
+main {
+    margin: auto;
+}
+/*Texto destaque da página*/
+.destaque {
+    text-align: center;
+}
+.destaque h1 {
+    font-weight: bold;
+    color: rgb(70, 136, 113);
+}
+.destaque h3 {
+    color: #524c4b;
+    margin: 10px;
+}
+
+/*Subtítulo*/
+.subtitulo {
+    text-align: center;
+    font-weight: bold;
+    color: #524c4b;
+    padding: 15px 0px 15px 0px;
+    margin-bottom: 10px;
+}
+.subtitulo-fundo h3 {
+    background-color: rgb(254, 208, 219, 0.3);
+    border-radius: 8px;
+    padding: 5px;
+    font-size: 17px;
+}
+
+/*Cards com os pacotes principais*/
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+.card {
+    padding: 15px;
+}
+.card img {
+    width: 70%;
+    display: flex;
+    margin: auto;
+    border-radius: 4px;
+}
+.card img:hover {
+    box-shadow: 0 0 1em #dfdcdc;
+}
+.card h3 {
+    padding: 5px;
+    text-align: center;
+    color: rgb(70, 136, 113);
+}
+.card p {
+    text-align: center;
+}
+.valor {
+    color: rgb(255, 151, 171);
+    padding: 10px;
+}
+.card a {
+    width: 40%;
+}
+.card button {
+    width: 100%;
+    display: block;
+    align-items: center;
+    background-color: #524c4b;
+    color: white;
+    font-size: 15px;
+    border-radius: 8px;
+}
+.botao a:link, .botao a:visited {
+    text-decoration: none;
+}
+.card button:hover {
+    color: rgb(255, 151, 171);
+    cursor: pointer;
+}
+.botao {
+    display: flex;
+    justify-content: center;
+}
+details {
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+details summary {
+    text-align: center;
+    font-style: italic;
+    color: #c7c7c7;
+    padding: 10px;
+}
+.caixa-divisor {
+    width: 100%;
+    text-align: center;
+}
+.divisor {
+    width: 75%;
+    display: inline-block;
+}
+
+/*Rodapé informativo*/
+.informativo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    background-color: #f8f5f2;
+    border-radius: 8px;
+}
+.informativo .card {
+    padding-top: 40px;
+}
+.informativo img {
+    width: 30%;
+    display: block;
+    margin: auto;
+    border-radius: 4px;
+    padding-bottom: 10px;
+}
+.informativo img:hover{
+    box-shadow: none;
+}
+.informativo p {
+    text-align: justify;
+    padding: 0px 15px 0px 15px;
+}
+
+/*FOOTER*/
+/*Rodapé da página*/
+footer {
+    color: #524c4b;
+    text-align: center;
+    margin-top: 50px;
+}
+footer a{
+    text-decoration: none;
+    color: #312e2e;
+    font-weight: bold;
+}
+.rodape {
+    background-color: #eeebe8;
+    margin: 0;
+    padding: 20px;
+}
+
+/*Configurações para versão web*/
+@media screen and (min-width: 1000px) {
+        
+    /*HEADER*/
+    header {
+        width: 100%;
+        margin: auto;
+    }
+    .texto-opcional {
+        display: inline-block;
+    }
+    /*Menu de navegação*/
+    .logo {
+        width: 120px;
+        display: block;
+        border-radius: 50%;
+        position: fixed;
+        top: -2.5%;
+        left: 2%;
+    }
+    nav {
+        position: fixed;
+    }
+    nav ul {
+        display: flex;
+        align-items: center;
+        padding-left: 170px;
+        height: 63px;
+        justify-content: left;
+    }
+    nav ul li {
+        font-size: 17px;
+        margin: 15px;
+    }
+
+    /*Imagem capa*/
+    .imagem-mobile {
+        display: none;
+    }
+    .imagem-web {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+    }
+
+    /*MAIN*/
+    main {
+        width: 1000px;
+        margin: auto;
+    }
+    .subtitulo-fundo h3 {
+        font-size: 18px;
+    }
+    /*Texto destaque da página*/
+    .destaque {
+        text-align: center;
+        padding: 20px;
+    }
+    .destaque h1 {
+        /* font-size: 30px; */
+        font-weight: bold;
+        color: rgb(70, 136, 113);
+    }
+    .destaque h3 {
+        color: #524c4b;
+        margin: 0px;
+        padding: 5px;
+    }
+
+    /*Cards com os pacotes principais*/
+    section {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card h3 {
+        margin: 0px;
+    }
+    .valor {
+        font-weight: normal;
+    }
+    .card a {
+        width: 70%;
+    }
+    .card button {
+        display: block;
+        align-items: center;
+        background-color: #524c4b;
+        color: white;
+        border-radius: 8px;
+    }
+    .botao {
+        display: flex;
+        justify-content: center;
+    }
+    details summary {
+        text-align: center;
+        font-style: italic;
+        color: #c7c7c7;
+    }
+    .caixa-divisor {
+        display: none;
+    }
+
+    /*Rodapé informativo*/
+    .informativo {
+        flex-direction: row;
+    }
+    .informativo img {
+        width: 50%;
+    }
+    .informativo img:hover{
+        box-shadow: none;
+    }
+    .informativo p {
+        padding: 15px;
+    }
+
+    /*FOOTER*/
+    /*Rodapé da página*/
+    footer {
+        width: 100%;
+    }
+    .rodape {
+        background-color: #eeebe8;
+        margin: 0;
+        padding: 10px;
+    }
+}
